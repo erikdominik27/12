@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int calculate(int principal, int rate, int time);
+
+int main() 
+{
+    int principal, rate, time, simpleinterest;
+    printf("Enter the Principal amount, Rate of interest, and Time: ");
+    scanf("%d %d %d", &principal, &rate, &time);
+    simpleinterest = calculate(principal, rate, time);
+    printf("The Simple Interest is: %d", simpleinterest);
+}
+
+int calculate(int principal, int rate, int time) {
+    return (principal * rate * time) / 100; 
+}
